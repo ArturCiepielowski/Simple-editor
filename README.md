@@ -1,9 +1,5 @@
 # wtf-gulp-starter
 
-`npm install -g gulp-cli`
+![Homepage screenshot](Github/README.JPG)
 
-`npm install`
-
-`gulp`
-
-To publish your page using github pages use `npm run deploy`
+To check out the project click here ->https://arturciepielowski.github.io/Simple-editor/
