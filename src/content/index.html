@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,15 +7,32 @@
   <title>Document</title>
   <link rel="stylesheet" href="css/main.css">
 </head>
+
 <body class="generator">
 
   <p class="generator__headline">Mój generator</p>
-  <div class="generatorBox">
+
+  <section class="generatorBox">
+
+    <div class="generatorBox__text"><p >Tu wpisz tekst:</p></div>
+    <div class="generatorBox__writingContainer">
+      <textarea class="textarea textarea--js" id="textarea" name="textarea" placeholder="Napisz tutaj coś"></textarea>
+
+  </section>
+
+  <section class="buttons">
+    <button class="buttons__save buttons__save--js ">
+      Zapisz
+    </button>
+
+    <button class="buttons__return buttons__return--js">
+      Przywróć
+    </button>
 
 
+  </section>
 
 
-    
   </div>
   
   <script src="js/main.js"></script>

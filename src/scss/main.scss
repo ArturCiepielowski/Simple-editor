@@ -1,10 +1,11 @@
 @import "_normalize";
 @import "_variables";
-
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
 
 html {
   box-sizing: border-box;
-  background-color: #939EAA;
+  font-family: Open Sans;
+  
 }
 
 *, *:before, *:after {
@@ -12,11 +13,146 @@ html {
 }
 
 body {
-  color: $yellow;
-  background: $violet;
+  background: #939EAA;
+}
+
+
+.buttons{
+
+  margin-top:50px;
+  display: flex;
+  justify-content: flex-end;
+  
+  &__save{
+
+    
+      background-color:#121232; 
+      border: none;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+  }
+
+  &__return{
+    
+      background-color:white; 
+      border: none;
+      color: #121232;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin-left:16px;
+  }
+
+  &__save:hover{
+
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  }
+
+
+  &__return:hover{
+
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  }
+}
+
+.generator{
+  width: 100%;
+  max-width: 800px;
+  margin: 32px auto;
+  
+
+  &__headline{
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 44px;
+    line-height: 64px;
+    text-align: center;
+
+  }
 }
 
 .generatorBox{
 
-  background: white;
+  
+  display: grid;
+  grid-template-columns: 30% 70%;
+  grid-column-gap: 16px;
+
+
+  &__text{
+
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    text-align: center;
+  }
+
+
+  &__writingContainer{
+
+    background-color: white;
+    width: 600px;
+    height: 320px;
+    border-radius:16px;
+
+  }
 }
+
+.textarea{
+ 
+    resize: none;
+    width: 550px;
+    height: 270px;
+    margin-left: 25px;
+    margin-top:25px;
+    border: none;
+
+    
+
+   
+}
+
+@media (max-width: 1000px){
+
+
+.generatorBox{
+
+  grid-template-columns: 1fr;
+
+
+  &__writingContainer{
+    width: 320px;
+    height: 600px;
+    max-width: 800px;
+    margin: 32px auto;
+  }
+
+  }
+
+  .textarea{
+ 
+    width: 270px;
+    height: 550px;
+    max-width: 800px;
+    margin: 25px; 
+  
+    
+    
+  }
+
+  .buttons{
+
+    justify-content: center;
+
+  }
+}
+
