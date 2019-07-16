@@ -1,9 +1,7 @@
-# wtf-gulp-starter
+# Simple-editor
 
-`npm install -g gulp-cli`
+![Homepage screenshot](Github/README.JPG)
 
-`npm install`
+Its a tool to send your text to local storage. After you refresh the page you can still obtain back our text.
 
-`gulp`
-
-To publish your page using github pages use `npm run deploy`
+To check out the project click here ->https://arturciepielowski.github.io/Simple-editor/
